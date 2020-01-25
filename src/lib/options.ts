@@ -7,6 +7,7 @@ export enum Modes {
   Ugoira = 'ugoira',
   Newer = 'newer',
   Popular = 'popular',
+  Rikka = 'rikka'
 }
 
 export interface Options {

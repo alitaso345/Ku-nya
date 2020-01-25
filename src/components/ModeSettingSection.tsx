@@ -13,6 +13,7 @@ interface State {
 
 export default class ModeSettingSection extends Component<Props, State> {
   private selectableOptions: Array<Modes> = [
+    Modes.Rikka,
     Modes.Illust,
     Modes.Manga,
     Modes.Original,

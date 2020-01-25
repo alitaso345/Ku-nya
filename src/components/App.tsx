@@ -6,6 +6,7 @@ import {
   getNewIllusts,
   getPopularIllusts,
   getRanking,
+  getRikkaIllusts,
 } from '../lib/api'
 import { Options, Modes } from '../lib/options'
 import { shuffle } from '../lib/util'
@@ -77,6 +78,8 @@ export default class App extends Component<Props, State> {
 
     return mode === Modes.Original
       ? getOriginalRanking()
+      : mode === Modes.Rikka
+      ? getRikkaIllusts()
       : mode === Modes.Newer
       ? getNewIllusts()
       : mode === Modes.Popular
