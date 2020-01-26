@@ -1,8 +1,8 @@
 {
-  "name": "Ku-nya",
-  "version": "2.8.1",
+  "name": "Ri-kka",
+  "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Ku-nya picks up illustrations on the pixiv ranking randomly and displays them on your new tab. Enjoy your pixiv life!",
+  "description": "Forked from Ku-nya. Enjoy your Rikka life!",
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "icons": {
     "16": "icon/icon16.png",
