@@ -2,10 +2,8 @@ import { h, Component } from 'preact'
 import {
   Options,
   setAspectRatioSettings,
-  setExcludingTags,
 } from '../lib/options'
 import AspectRatioSettingSection from './AspectRatioSettingSection'
-import TagSettingSection from './TagSettingSection'
 
 interface Props {
   initialOptions: Options
@@ -16,7 +14,6 @@ export default class SettingPanel extends Component<Props> {
     const {
       isExcludingHighAspectRatio,
       smallestIncludableAspectRatio,
-      excludingTags,
     } = this.props.initialOptions
 
     return (
@@ -27,10 +24,6 @@ export default class SettingPanel extends Component<Props> {
             smallestIncludableAspectRatio
           }
           update={setAspectRatioSettings}
-        />
-        <TagSettingSection
-          initialTags={excludingTags}
-          update={setExcludingTags}
         />
       </div>
     )
