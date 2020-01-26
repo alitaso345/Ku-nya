@@ -6,7 +6,6 @@ export default (env, argv) =>
     context: path.join(__dirname, 'src'),
     entry: {
       "dist/main": './main.tsx',
-      "dist/popup": './popup.tsx',
       "background": './background.tsx',
       "sw": './sw.js',
     },
